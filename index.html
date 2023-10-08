@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <title>Pepe el prestamista</title>
+</head>
+
+<body>
+  <header>
+    <img src="img/monkas.png" alt="Pepe">
+    <h1>Pepe el prestamista</h1>
+  </header>
+  <main>
+    <h2>Solicite su prestamo</h2>
+
+    <div id="Centrar">
+      <div>
+        <label for="dni">
+          DNI:<br />
+          <input type="text" name="dni" id='dni'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="monto">
+          Monto:<br />
+          <input type="text" name="monto" id='monto'>
+        </label>
+      </div>
+      
+      <div>
+        <label for="cuotas">
+          Cuotas:(1 ,3 ,6 ,9 o 12)<br />
+          <input type="text" name="cuotas" id='cuotas'>
+        </label>
+      </div>
+      
+      <br />
+      
+      <button id='botonCalcular'>Calcular</button>
+      
+      <div>
+        <p>
+          Resultado:<br/>
+          <span id="resultado"></span>
+        </p>
+      </div>
+    </div>
+
+    <button id='botonEliminarGuardados'>Eliminar prestamos guardados</button>
+  </main>
+
+  <footer>
+    
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src='script.js'></script>
+</body>
+
+</html>
